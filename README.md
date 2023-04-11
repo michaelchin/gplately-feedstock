@@ -144,4 +144,5 @@ Feedstock Maintainers
 =====================
 
 * [@brmather](https://github.com/brmather/)
+* [@jcannon-gplates](https://github.com/jcannon-gplates/)
 
