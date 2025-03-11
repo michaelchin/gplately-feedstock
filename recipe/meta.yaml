@@ -37,6 +37,8 @@ requirements:
     - stripy
     - plate-model-manager >=1.2.2
     - pyyaml
+    - rioxarray
+    - pygmt
 
 test:
   imports:
