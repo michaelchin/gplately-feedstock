@@ -1,0 +1,5 @@
+channel_sources:
+  - conda-forge/label/pygplates_rc,conda-forge
+
+channel_targets:
+  - conda-forge gplately_rc

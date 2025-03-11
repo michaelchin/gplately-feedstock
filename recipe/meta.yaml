@@ -1,5 +1,5 @@
 {% set name = "gplately" %}
-{% set version = "1.3.0" %}
+{% set version = "2.0.0rc0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/gplately-{{ version }}.tar.gz
-  sha256: 97fdf1b85d10bf038ce6c4a04a0fcc5f76ab5b439467911e2c672ec2147f5226
+  sha256: 97372c5c7e7f9300a054f7a523fd424e959503e84793b03e81239baf3d07a487
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 2
+  number: 2 
 
 requirements:
   host:
@@ -25,7 +25,7 @@ requirements:
     - python >={{ python_min }}
     - numpy >=1.16.0
     - scipy >=1.0.0
-    - pygplates
+    - pygplates >=1.0.0rc1
     - shapely
     - matplotlib-base
     - cartopy
@@ -35,7 +35,10 @@ requirements:
     - rasterio
     - geopandas
     - stripy
-    - plate-model-manager
+    - plate-model-manager >=1.2.2
+    - pyyaml
+    - rioxarray
+    - pygmt
 
 test:
   imports:
@@ -46,6 +49,7 @@ test:
     - pip
     - pytest
     - python {{ python_min }}
+    - pyyaml
 
 about:
   home: https://github.com/GPlates/gplately

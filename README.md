@@ -32,14 +32,14 @@ Current release info
 Installing gplately
 ===================
 
-Installing `gplately` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
+Installing `gplately` from the `conda-forge/label/gplately_rc` channel can be achieved by adding `conda-forge/label/gplately_rc` to your channels with:
 
 ```
-conda config --add channels conda-forge
+conda config --add channels conda-forge/label/gplately_rc
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `gplately` can be installed with `conda`:
+Once the `conda-forge/label/gplately_rc` channel has been enabled, `gplately` can be installed with `conda`:
 
 ```
 conda install gplately
@@ -54,26 +54,26 @@ mamba install gplately
 It is possible to list all of the versions of `gplately` available on your platform with `conda`:
 
 ```
-conda search gplately --channel conda-forge
+conda search gplately --channel conda-forge/label/gplately_rc
 ```
 
 or with `mamba`:
 
 ```
-mamba search gplately --channel conda-forge
+mamba search gplately --channel conda-forge/label/gplately_rc
 ```
 
 Alternatively, `mamba repoquery` may provide more information:
 
 ```
 # Search all versions available on your platform:
-mamba repoquery search gplately --channel conda-forge
+mamba repoquery search gplately --channel conda-forge/label/gplately_rc
 
 # List packages depending on `gplately`:
-mamba repoquery whoneeds gplately --channel conda-forge
+mamba repoquery whoneeds gplately --channel conda-forge/label/gplately_rc
 
 # List dependencies of `gplately`:
-mamba repoquery depends gplately --channel conda-forge
+mamba repoquery depends gplately --channel conda-forge/label/gplately_rc
 ```
 
 
