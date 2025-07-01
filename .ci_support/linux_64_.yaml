@@ -1,7 +1,7 @@
 cdt_name:
 - conda
 channel_sources:
-- conda-forge/label/pygplates_rc,conda-forge
+- conda-forge
 channel_targets:
 - conda-forge gplately_rc
 docker_image:
