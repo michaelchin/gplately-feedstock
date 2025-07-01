@@ -4,4 +4,4 @@ github:
 conda_build:
   error_overlinking: true
 conda_forge_output_validation: true
-ChannelPriorityConfig: flexible
+channel_priority: flexible
