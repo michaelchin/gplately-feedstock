@@ -1,5 +1,5 @@
 {% set name = "gplately" %}
-{% set version = "2.0.0rc3" %}
+{% set version = "2.0.0rc4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/gplately-{{ version }}.tar.gz
-  sha256: afad0c576c0aa7f78c00e7c2be18a5e772d90fc26348c8f50b8bf8b10d655769
+  sha256: 2ed4fec4591bf1e0aaf1cb6419598a0fb575e1ebecb2d23b1f555d64722e8204
 
 build:
   noarch: python
@@ -34,7 +34,6 @@ requirements:
     - netcdf4
     - rasterio
     - geopandas
-    - stripy
     - plate-model-manager >=1.3.0
     - pyyaml
     - rioxarray
